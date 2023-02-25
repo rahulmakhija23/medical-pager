@@ -5,8 +5,7 @@ import Cookies from "universal-cookie"
 import { ChannelContainer, ChannelListContainer } from './Components'
 import "./App.css"
 
-const apiKey='9devgcze43pb';
-const client= StreamChat.getInstance(apiKey);
+const client= StreamChat.getInstance(process.env.ApiKey);
 
 
 const App = () => {
